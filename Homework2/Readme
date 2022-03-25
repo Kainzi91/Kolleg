@@ -5,12 +5,6 @@ Download hw_2.tar.gz and extract it. This archive contains a grader which works 
 
 python hw2_grader.py
 Add your solutions in the directory contained in the archive. Right after the shebang, each of your files must contain your name using the following template
-
-"""
-.. moduleauthor:: Your Name <your.name@example.com>
-"""
-We did not discuss every detail required to solve the following tasks. Use your favorite search engine and some common sense to solve the tasks.
-
 Use exactly the same input prompts and output messages as in the provided examples. This is important as your results will partly be graded automatically.
 When completing the tasks you might get the impression that all of these could be solved simpler using a spreadsheet program like LibreOffice Calc... and you’d be right. But, hey, this is the first real code you write in a programming language. The upcoming homeworks will be much more thrilling :)
 
@@ -22,6 +16,7 @@ Enter the height: 2.1
 The spherical cap has a surface of 44.862
 The volume of the spherical cap is 37.407
 Name the program file: spherical_cap.py
+
 Fix the program below
 There are a few bugs in the code below. The code should calculate the two solutions to quadratic equations like
 One issue is that the code was written for Python 2, but there are more problems... [hint: the main bugs are conceptual errors - those are particularly evil, because the Python interpreter will not report an error] The results should be rounded to two digits.
@@ -34,6 +29,7 @@ x1 = (-b + q) / 2a
 x2 = (-b - q) / 2a
 print x1, x2
 Name the program file: quadratic_equation.py
+
 Even numbers
 Print the squares of all even numbers starting with 0 up to a value of the square supplied by the user.
 A sample run of this program:
@@ -43,19 +39,25 @@ Upper limit: 48
 16
 36
 Name the program file: even.py
-Calculating a sum Write a program that adds up all numbers between 1 and a user-defined upper limit. However, only numbers that can be divided by a given positive integer without a remainder should be added. The upper limit has to be integral and must be included in the sum. [hint: one way to solve this is to read about the modulo operator in the documentation; however, if you use pencil and paper to really understand the problem, there is a nicer solution available]
+
+Calculating a sum
+Write a program that adds up all numbers between 1 and a user-defined upper limit. However, only numbers that can be divided by a given positive integer without a remainder should be added. The upper limit has to be integral and must be included in the sum. [hint: one way to solve this is to read about the modulo operator in the documentation; however, if you use pencil and paper to really understand the problem, there is a nicer solution available]
 A sample run of this program:
 Denominator: 7
 Upper limit: 63
 Sum: 315
 Name the program file: special_sum.py
-Simple search Write a program that asks the user for two strings. The first string is a comma-separated list of relative filenames. The program should then count the non-overlapping occurrences of the second string in all the given files. The comparison must not be case sensitive. Note: non-overlapping means that searching for 'ha' in 'hahah' leads to two results while searching for 'hah' in 'hahah' leads to only one result as the second occurance of 'hah' would overlap with the first.
+
+Simple search
+Write a program that asks the user for two strings. The first string is a comma-separated list of relative filenames. The program should then count the non-overlapping occurrences of the second string in all the given files. The comparison must not be case sensitive. Note: non-overlapping means that searching for 'ha' in 'hahah' leads to two results while searching for 'hah' in 'hahah' leads to only one result as the second occurance of 'hah' would overlap with the first.
 A sample run of this program:
 Files: f1.txt,f2.txt
 Needle: lorem
 Occurrences: 12
 Name the program file: search.py
-Downloading data Write a script that downloads a file from the internet. The file contains a fictitious weather forecast for the next seven days. Once you can access the file's content, calculate the average temperature for the next weekend (Saturday and Sunday). Based on this average, the program should then suggest an activity for the weekend.
+
+Downloading data
+Write a script that downloads a file from the internet. The file contains a fictitious weather forecast for the next seven days. Once you can access the file's content, calculate the average temperature for the next weekend (Saturday and Sunday). Based on this average, the program should then suggest an activity for the weekend.
 >25 C
 swimming
 >12 - 25 C
@@ -70,12 +72,14 @@ The fictitious weather forecast is available at http://bulme.find-santa.eu/data/
 A sample run of this program:
 Next weekend, hiking would be a good activity.
 Name the program file: downloading.py
+
 VRPTW instances
 The vehicle routing problem with time windows is a well known combinatorial optimization problem. There are many heuristics and local search methods available that help obtaining good results. However, before any instance can be solved, the input files have to be read.
 Develop a small Python script that downloads the file r101.txt and then reads it line by line (using a for loop). Doing so, print the sum of the demand of all entries. [hint: ''.split(.) is your friend]
 A sample run of this program:
 Total demand: 1458.0
 Name the program file: print_demand.py
+
 Financial Data
 Using your favorite web browser, go to http://finance.yahoo.com/ and search for a company of your choice. Then click on "Historical Data" and select a date range which provides at least 50 values. Click on Apply (even if you didn't adjust the date range) followed by "Download Data" to obtain the data in the CSV format.
 Write a Python script that reads each data line's closing price. The script then needs to calculate the average closing price over the entire period. Print the average closing price (two digits after the decimal point) and indicate whether it is higher or lower than the most recent closing price.
@@ -85,12 +89,14 @@ The average closing price was ${AVERAGE_CLOSING_PRICE}.
 The most recent closing price (...) was ... above the average.
 [Output depends on the file you downloaded... to allow the grader to work on your computer, download the data for Andritz AG (ANDR.VI).]
 Name the program file: financial_data.py
+
 Factoring of integers
 Write a program that prints out all the factors of a given number.
 A sample run of this program:
 Integer: 60
 60 = 2 * 2 * 3 * 5
 Name the program file: factor.py
+
 ROT13 (hard!)
 ROT13 is a simple substitution cipher. Read about it at http://en.wikipedia.org/wiki/Rot13. It is built on the fact that each character has an integer ordinal (i = ord(c); c = chr(i)).
 Read an entire file into a single string and convert it to uppercase (for simplicity). Then encrypt/ decrypt the text using ROT13. To translate the text, iterate over all characters in the string. Characters other than A-Z should not be changed. Test your code with the provided rot13.txt file. Besides asking the user for an input filename, the only output of the program must be the decoded content of the file. [note: you are not allowed to use Python's translate function or dictionaries; A has the ordinal 65, Z has the ordinal 90]
@@ -99,4 +105,4 @@ File to decode: rot13.txt
 [Patient, little bird - start working on this task...*]
 * this is not the actual output as it would be a spoiler to know the result before even starting to try to figure out the solution yourself ;)
 Name the program file: rot13.py
-All resulting files must be placed in a single directory. The name of the directory must be 2_firstname_lastname (in case of team homeworks, add each member's first and last names). Make sure to also include the grader. Compress the directory to either 2_firstname_lastname.tar.gz or 2_firstname_lastname.tar.bz2 before sending it to assignments@senarclens.eu.
+
