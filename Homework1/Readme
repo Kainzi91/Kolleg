@@ -20,12 +20,14 @@ The first exercise concerns basic mathematics: Write a program for printing the 
 A sample run of this program:
 26
 Name the program file: simplemath.py
+
 Convert Fahrenheit to Celsius
 Ask the user to enter a floating point number denoting a temperature in degrees Fahrenheit. There must be a single space after the colon of the input prompt. Use the exact same wording for the input prompt and output as in the example below. Print that number converted to Celsius using the formula . The result must be rounded to two digits after the decimal point.
 A sample run of this program:
 Enter a temperature in degrees Fahrenheit: 72.3
 72.3 degrees Fahrenheit correspond to 22.39 degrees Celsius
 Name the program file: fahrenheit_to_celsius.py
+
 Compute the return of investing money
 Ask the user to enter a three values - a bank’s interest rate in percent per year, an initial investment and a number of years. Print both the earnings and the future value at the end of the investment. Assume that there are no taxes. The result must be rounded to two digits after the decimal point.
 A sample run of this program:
@@ -35,6 +37,7 @@ Enter the number of years the money will be invested: 5
 The earned interest is 511.72.
 The terminal value amounts to 3511.72.
 Name the program file: interest.py
+
 Surface area and volume of a sphere
 The program below should print the surface area and volume of a sphere given its radius. However, it contains errors. Fix the program.
 from math import PI
@@ -44,6 +47,7 @@ volume = (4 div 3) * r^3 * PI
 print("The sphere has a volume of", round(volume, 2));
 print("The surface are of this sphere is", round(Area, 2));
 Name the program file: sphere.py
+
 Convert Celsius to Fahrenheit
 Instead of asking the user for input, simply print all temperatures from -15 degrees Celsius to +35 degrees Celsius in Fahrenheit. Use the formula . [hint: use a while loop]
 A sample run of this program:
@@ -54,6 +58,7 @@ A sample run of this program:
 34 C => 93.2 F
 35 C => 95.0 F
 Name the program file: celsius_to_fahrenheit.py
+
 Imperial units
 Ask the user for a length in meters and print the corresponding length measured in inches, in feet, in yards, and in miles. Assume that one inch is 2.54 cm, one foot is 12 inches, one yard is 3 feet, and one British mile is 1760 yards. Round all results to two digits for printing.
 A sample run of this program:
@@ -63,6 +68,7 @@ Enter a distance in meters: 1.3
 1.42 yards
 0.00 miles
 Name the program file: imperial_units.py
+
 Mathematical functions
 Write a program that prints the sine and tangent of all values between 0 and  in steps of 0.1. The last value must be . All values should be rounded to 2 digits after the decimal point. Hint: check the documentation of the format function.
 A sample run of this program:
@@ -76,6 +82,7 @@ radians |  sine | tangent
     3.1 |  0.04 |   -0.04
    3.14 |   0.0 |    -0.0
 Name the program file: trigonometry.py
+
 Distance between two points
 Write a program that asks the user for two points in a two-dimensional plane. The program must calculate and print the euclidean distance between the two points, rounded to 4 digits.
 A sample run of this program:
@@ -85,6 +92,7 @@ Second point's x-coordinate: -2.0
 Second point's y-coordinate: 3.0
 The euclidean distance between the two points is 6.4031.
 Name the program file: distance.py
+
 Conversion between Celsius and Fahrenheit
 Create a new program using the formulas from exercises 1 and 5 that first asks the user whether a conversion from Celsius to Fahrenheit or the other way around is desired. Then print a table of values converting one unit to the other. For the conversion from C to F print the range of values from -20 to +40; for conversion from F to C print the values from -10 to +110.
 A sample run of this program:
