@@ -1,16 +1,3 @@
- 
-1
-Max. 9 points
-
-Download hw_1.tar.gz and extract it. This archive contains a grader which works for all current versions of Python 3 and expects the solution files to be placed in the same directory. It has to be executed from this directory via
-
-python hw1_grader.py
-Add your solutions in the directory contained in the archive. Right after the shebang, each of your files must contain your name using the following template
-
-"""
-.. moduleauthor:: Your Name <your.name@example.com>
-"""
-We did not discuss every detail required to solve the following tasks. Use your favorite search engine and some common sense to solve the tasks.
 
 Use exactly the same input prompts and output messages as in the provided examples. This is important as your results will partly be graded automatically.
 When completing the tasks you might get the impression that all of these could be solved simpler using a spreadsheet program like LibreOffice Calc... and you’d be right. But, hey, this is the first real code you write in a programming language. The upcoming homeworks will be much more thrilling :)
@@ -103,4 +90,3 @@ For C => F enter C, for F => C enter F: C
 39 C => 102.2 F
 40 C => 104.0 F
 Name the program file: temperature_tables.py
-All resulting files must be placed in a single directory. The name of the directory must be 1_firstname_lastname (in case of team homeworks, add each member's first and last names). Make sure to also include the grader. Compress the directory to either 1_firstname_lastname.tar.gz or 1_firstname_lastname.tar.bz2 before sending it to assignments@senarclens.eu.
